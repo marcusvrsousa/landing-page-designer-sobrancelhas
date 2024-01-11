@@ -8,9 +8,10 @@ p {
 }
 
 .gradiente {
+  /* background-image: linear-gradient(#fef5b0, #f7a580); */
   background-color: #b976ee;
   /* Roxo > roxo mais forte
-  background-image: linear-gradient(#b976ee, rgb(90, 34, 180)); 
+  background-image: linear-gradient(#fef5b0, #f7a580)); 
   */
   /* f3dadd */
 }
@@ -85,7 +86,7 @@ p {
 
 .fran-foto {
   width: 25%;
-  border-radius: 10em;
+  border-radius: 100%;
 }
 
 /* =================div das fotos=============== */
@@ -101,30 +102,46 @@ p {
 }
 
 .fotos {
-  height: 100vh;
+  min-height: 100vh;
   /* background-color: #b976ee; */
   background-color: #f7d3a6;
+  /* background-image: linear-gradient(#e977e6, #ffd0ff); */
 }
 
 .lista-fotos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100vh0px;
+  gap: 10px;
 }
 
-.fotos .foto-sobrancelha {
-  margin-top: 5%;
-  width: 40vh;
+.fotos-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
+.fotos-portfolio img {
+  width: 40vh;
+
+  /* border-radius: 200px; */
+}
+
+/* .fotos .foto-sobrancelha {
+} */
 
 /* =================div dos servicos=============== */
 
 .servicos {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #78b4b9;
+  /* background-image: linear-gradient(#00ffff, #adff2f); */
   /* background-color: #f0f696; amarelo mais forte*/
 }
 
@@ -132,71 +149,57 @@ p {
   display: flex;
   justify-content: center;
   font-size: 3rem;
+  font-family: "Satisfy";
   margin-top: 25%;
   height: 40px;
   transform: rotate(270deg);
 }
 
-.servico1 {
-  position: relative;
-  margin-top: 10%;
-  margin-right: 10%;
+.lista-servicos {
+  display: flex;
+  align-items: center;
+  width: 50%;
   height: 50%;
-  width: 40%;
-  background-color: #1b191d;
+  margin-top: 5%;
+  list-style: none;
+  gap: 50px;
   border-radius: 20px;
+  background: #008080;
+  padding: 80px;
 }
 
-.servico2 {
-  position: relative;
-  margin-top: 10%;
-  margin-right: 10%;
-  height: 50%;
-  width: 40%;
-  /* background-color: #b976ee; */
-  background-color: #1b191d;
-  border-radius: 20px;
+.lista-servicos img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.lista-servicos .serv1,
+.serv2 {
+  width: 100%;
+  height: 300px;
+}
+
+.sobrancelha-pinca,
+.sobrancelha-henna {
+  height: 200px;
 }
 
 .texto-design,
 .texto-henna {
   text-align: center;
-  color: aliceblue;
-
-  margin: 10px;
-  height: 14%;
-  padding: 5px;
+  color: black;
+  padding: 10px;
+  margin: -10px;
   font-style: italic;
-}
-
-.servico1 .texto-design {
-  position: absolute;
-  bottom: 0;
-}
-
-.servico2 .texto-henna {
-  position: absolute;
-  bottom: 0;
-  left: 25px;
-}
-
-.sobrancelha-pinca {
-  width: 95%;
-  height: 75%;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
+  font-size: 1.2rem;
+  background: #20b2aa;
+  border: 1px solid #20b2aa;
   border-radius: 20px;
 }
 
-.sobrancelha-henna {
-  width: 95%;
-  height: 75%;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
-  border-radius: 20px;
-}
-
-.texto-design {
+.texto-design > strong,
+.texto-henna > strong {
+  color: white;
 }
 
 /* =================div do contato=============== */
