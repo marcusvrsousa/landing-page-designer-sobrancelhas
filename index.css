@@ -9,7 +9,7 @@ p {
 
 .gradiente {
   /* background-image: linear-gradient(#fef5b0, #f7a580); */
-  background-color: #b976ee;
+  background-color: #fff;
   /* Roxo > roxo mais forte
   background-image: linear-gradient(#fef5b0, #f7a580)); 
   */
@@ -32,20 +32,22 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(212, 150, 227, 0.35);
 }
 
 .itens-navegacao {
   margin: 20px;
-  font-size: 20px;
-  transition: 1s ease-out;
+  font-family: "Recursive", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .link-navegacao {
+  color: #000;
   margin-left: 10px;
   text-decoration: none;
-  /* box-shadow: 2px 2px 10px 5px rgb(90, 34, 180);
-  border-radius: 3px; */
-
   padding: 3px;
 }
 
@@ -58,7 +60,7 @@ p {
 /* =================botao back to the top=============== */
 
 .btn-fixed {
-  margin-top: 80vh;
+  margin-top: 70vh;
   color: black;
   position: fixed;
   //bottom: 30px;
@@ -76,12 +78,19 @@ p {
 }
 
 .nome {
-  font-size: 70px;
+  font-size: 60px;
+  font-family: "Recursive";
+}
+
+.nome strong {
+  color: #d496e3;
 }
 
 .profissao {
-  font-size: 25px;
+  font-size: 40px;
   font-style: italic;
+  color: #d496e3;
+  font-weight: ;
 }
 
 .fran-foto {
@@ -97,14 +106,14 @@ p {
   font-size: 2rem;
   padding: 10px;
   margin-right: 20px;
-  font-family: "Satisfy";
+  font-family: "Recursive";
   font-size: 50px;
 }
 
 .fotos {
   min-height: 100vh;
   /* background-color: #b976ee; */
-  background-color: #f7d3a6;
+  background-color: #d496e380;
   /* background-image: linear-gradient(#e977e6, #ffd0ff); */
 }
 
@@ -127,79 +136,73 @@ p {
 
 .fotos-portfolio img {
   width: 40vh;
-
-  /* border-radius: 200px; */
 }
-
-/* .fotos .foto-sobrancelha {
-} */
 
 /* =================div dos servicos=============== */
 
 .servicos {
-  height: 100vh;
+  height: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  background-color: #78b4b9;
-  /* background-image: linear-gradient(#00ffff, #adff2f); */
-  /* background-color: #f0f696; amarelo mais forte*/
+  background-color: #ffffff;
+}
+
+.lista-servicos {
+  display: flex;
+  flex-direction: column;
 }
 
 .servicos .p-servicos {
   display: flex;
   justify-content: center;
   font-size: 3rem;
-  font-family: "Satisfy";
-  margin-top: 25%;
-  height: 40px;
-  transform: rotate(270deg);
-}
-
-.lista-servicos {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  margin-top: 5%;
-  list-style: none;
-  gap: 50px;
-  border-radius: 20px;
-  background: #008080;
-  padding: 80px;
+  font-family: "Recursive";
+  margin-top: 2%;
 }
 
 .lista-servicos img {
-  width: 100%;
-  border-radius: 10%;
+  width: 60%;
+  border-radius: 17px;
 }
 
 .lista-servicos .serv1,
 .serv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-  height: 300px;
+  padding: 20px;
 }
 
 .sobrancelha-pinca,
 .sobrancelha-henna {
-  height: 200px;
+  height: 300px;
 }
 
-.texto-design,
-.texto-henna {
-  text-align: center;
+.texto-design {
   color: black;
-  padding: 10px;
-  margin: -10px;
-  font-style: italic;
+  stroke: #d496e3;
+  font-style: ;
+  font-family: "Recursive";
   font-size: 1.2rem;
-  background: #20b2aa;
-  border: 1px solid #20b2aa;
-  border-radius: 20px;
+  text-align: right;
+  width: 20%;
 }
 
-.texto-design > strong,
-.texto-henna > strong {
-  color: white;
+.texto-henna {
+  color: black;
+  font-family: "Recursive";
+  /* font-style: italic; */
+  font-size: 1.2rem;
+  text-align: left;
+  width: 20%;
+}
+
+.texto-henna > strong,
+.texto-design > strong {
+  color: #d496e3;
 }
 
 /* =================div do contato=============== */
@@ -209,7 +212,7 @@ p {
 }
 .contato {
   /* background-color: #b976ee; */
-  background-color: #ffc4bb;
+  background: rgba(212, 150, 227, 0.35);
   display: flex;
   justify-content: space-around;
   height: 40vh;
@@ -228,7 +231,7 @@ p {
 
 .p-contato {
   font-size: 50px;
-  font-family: "Satisfy";
+  font-family: "Recursive";
   text-align: center;
   margin-top: 5vh;
   // margin: 0 25% 16%;
@@ -236,7 +239,6 @@ p {
 
 .wpp {
   width: 40px;
-
   border-radius: 15px;
   margin-bottom: 6%;
   opacity: 0.7;
@@ -256,8 +258,8 @@ p {
 }
 
 .numero-wpp {
-  font-family: "Satisfy";
-  font-size: 20px;
+  font-family: "Recursive";
+  font-size: 18px;
 }
 
 .instagram {
@@ -283,8 +285,8 @@ p {
 }
 
 .nome-instagram {
-  font-family: "Satisfy";
-  font-size: 25px;
+  font-family: "Recursive";
+  font-size: 18px;
 }
 .contato .mapa {
   height: 100%;
