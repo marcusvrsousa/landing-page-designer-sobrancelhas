@@ -24,11 +24,11 @@ p {
 .nav-logo {
   margin-left: 50px;
   width: 4%;
-  padding: 10px;
+  padding: 5px;
   border-radius: 100px;
 }
 
-.nav-principal .container {
+.nav-principal .containerIndex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,6 +52,10 @@ p {
 }
 
 .link-navegacao:hover {
+  color: #000;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 3px;
   border-bottom: 2px solid rgb(90, 34, 180);
 
   /* rgb(90, 34, 180) */
@@ -60,7 +64,7 @@ p {
 /* =================botao back to the top=============== */
 
 .btn-fixed {
-  margin-top: 70vh;
+  margin-top: 80vh;
   color: black;
   position: fixed;
   //bottom: 30px;
@@ -80,6 +84,7 @@ p {
 .nome {
   font-size: 60px;
   font-family: "Recursive";
+  line-height: 1;
 }
 
 .nome strong {
@@ -90,7 +95,7 @@ p {
   font-size: 40px;
   font-style: italic;
   color: #d496e3;
-  font-weight: ;
+  text-decoration: underline;
 }
 
 .fran-foto {
@@ -310,17 +315,17 @@ p {
     flex-direction: column; */
   }
 
-  .container {
+  .containerIndex {
     display: flex;
     flex-direction: column;
   }
 
-  .container .nav-logo {
+  .containerIndex .nav-logo {
     width: 30%;
     margin-left: 4px;
   }
 
-  .container .itens-navegacao {
+  .containerIndex .itens-navegacao {
     display: flex;
   }
 
