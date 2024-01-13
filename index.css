@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* #ffccc5 */
 body,
 p {
   margin: 0;
@@ -9,7 +9,7 @@ p {
 
 .gradiente {
   /* background-image: linear-gradient(#fef5b0, #f7a580); */
-  background-color: #fff;
+  /* background-color: #ffece9; */
   /* Roxo > roxo mais forte
   background-image: linear-gradient(#fef5b0, #f7a580)); 
   */
@@ -17,7 +17,7 @@ p {
 }
 
 .nav-principal {
-  height: 50px;
+  height: 100px;
   margin-bottom: -16px;
 }
 
@@ -79,6 +79,7 @@ p {
   justify-content: space-around;
   margin-top: 0px;
   height: 100vh;
+  background: #f5fffa;
 }
 
 .nome {
@@ -103,13 +104,14 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(212, 150, 227, 0.2);
+  background: rgba(212, 150, 227, 0.4);
+
   height: 300px;
   width: 600px;
   border-radius: 2%;
 }
 .fran-foto {
-  width: 25%;
+  width: 32%;
   border-radius: 100%;
 }
 
@@ -160,7 +162,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #ffffff;
+  /* background-color: #fff4f2; */
+  background-color: #fffafa;
 }
 
 .lista-servicos {
@@ -177,7 +180,7 @@ p {
 }
 
 .lista-servicos img {
-  width: 60%;
+  width: 50%;
   border-radius: 17px;
 }
 
@@ -324,10 +327,6 @@ p {
     right: 10px;
   }
 
-  .gradiente {
-    background-color: #ffccc5;
-  }
-
   .nav-principal {
     /* display: flex;
     flex-direction: column; */
@@ -385,43 +384,6 @@ p {
     width: 20vh;
   }
 
-  /* -------------- serviços -------------- */
-
-  .servicos {
-    display: flex;
-    flex-direction: column;
-    height: 110vh;
-  }
-
-  .servicos .serv1 {
-    border: 2px solid;
-  }
-
-  .servicos .p-servicos {
-    margin-top: 20px;
-    transform: rotate(0);
-    font-family: "Satisfy";
-    text-decoration: overline;
-  }
-
-  .lista-servicos {
-    list-style: none;
-    margin-right: 25px;
-  }
-
-  .lista-servicos .sobrancelha-pinca {
-    height: 170.75px;
-    border: 1px solid;
-    box-shadow: 3px 3px black;
-    margin-left: ;
-  }
-
-  /* .lista-servicos .sobrancelha-henna:hover {
-    filter: blur(1px);
-    transition: all 0.6s ease;
-    opacity: 1;
-  } */
-
   /* -------------- contato e mapa -------------- */
 
   .contato {
@@ -430,15 +392,10 @@ p {
     height: fit-content;
   }
 
-  .lista {
-    width: 500px;
-  }
-
   .lista .lista-contato {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: auto;
     padding: 0;
     margin: 10px;
   }
@@ -461,9 +418,192 @@ p {
   }
 }
 
+/* ---------- TELA 4K ------------- */
+
+@media screen and (min-width: 1440px) and (max-width: 1980px) {
+  .nome-profissao {
+    height: 500px;
+    width: 50vw;
+  }
+  /* ---------- portfolio -------------*/
+
+  .p-portfolio {
+    margin-top: 10px;
+  }
+  .lista-fotos {
+    margin-top: 10vh;
+    align-items: center;
+  }
+}
+
+/* ---------- TELA 1024+ ------------- */
+@media screen and (min-width: 1024px) {
+  .nome-profissao {
+    height: 50vh;
+    width: 50vw;
+  }
+
+  .nome {
+    font-size: 3rem;
+  }
+
+  .profissao {
+    font-size: 1.8rem;
+  }
+
+  .lista-fotos {
+    /* margin-top: 10vh; */
+    align-items: center;
+  }
+}
+
+/* ---------- TABLET 768 ------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-logo {
+    width: 7%;
+  }
+
+  .nome-profissao {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .nome {
+    font-size: 2rem;
+  }
+
+  .profissao {
+    font-size: 1.6rem;
+  }
+
+  /* portfolio */
+
+  .fotos {
+    min-height: 110vh;
+  }
+
+  .lista-fotos {
+  }
+
+  .p-portfolio {
+    font-size: 2.4rem;
+    padding: 1;
+    margin: 0;
+  }
+
+  .servicos .p-servicos {
+    font-size: 2.4rem;
+  }
+
+  /* contato e mapa */
+  .mapa {
+    width: 40vw;
+  }
+
+  .p-contato {
+    font-size: 2.2rem;
+  }
+
+  .btn-fixed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .btn-fixed {
+    display: none;
+  }
+
+  .nav-principal {
+    width: 100vw;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerIndex .nav-logo {
+    width: 10%;
+  }
+
+  /* CONTAINER APRESENTAÇÃO */
+  .nome-profissao {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .nome-profissao .nome {
+    font-size: 2rem;
+  }
+
+  .nome-profissao .profissao {
+    font-size: 1.4rem;
+  }
+
+  .apresentacao .fran-foto {
+    width: 50vh;
+    margin-bottom: 10vh;
+  }
+
+  /* CONTAINER PORTFOLIO */
+
+  .carousel-inner img {
+    height: 400px;
+  }
+
+  .p-portfolio {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  .lista-fotos {
+    margin: 0rem 2rem;
+    padding: 20px;
+  }
+  .contato .lista {
+    width: 100vw;
+  }
+
+  .mapa {
+    width: 40vw;
+  }
+}
+
+/* container servicos */
+
+.servicos .p-servicos {
+  font-size: 2rem;
+}
+
+.lista-servicos {
+  padding: 0;
+}
+
+.texto-design,
+.texto-henna {
+  width: 40vw;
+}
+
+.lista-servicos img {
+  width: 40vw;
+  height: 40vh;
+}
+
+/* CONTAINER CONTATO */
+
+.contato .p-contato {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 375px) and (max-width: 425px) {
+  .btn-fixed {
+    display: none;
+  }
+
   .nome-profissao {
     margin-top: 40px;
+    width: 100vw;
   }
   .servicos .p-servicos {
     margin-top: 40px;
@@ -476,61 +616,106 @@ p {
   .texto-design {
     margin: 0px;
   }
+
+  .p-contato,
+  .lista-contato {
+    width: 100vw;
+  }
+
+  .mapa {
+    width: 80vw;
+    margin: 1rem 2rem;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .btn-fixed {
+    display: none;
+  }
+
+  .gradiente {
+    height: 100vh;
+  }
+
+  .containerIndex .nav-logo {
+    width: 30vw;
+  }
+  .apresentacao .nome-profissao {
+    width: 100vw;
+    height: 20vh;
+  }
+
+  .apresentacao .nome {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao .fran-foto {
+    margin-bottom: 35vh;
+  }
+
+  /* CONTAINER PORTFOLIO */
+
+  .p-portfolio {
+    font-size: 1.5rem;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+
   .fotos {
+    height: 100vh;
+  }
+
+  .lista-fotos {
+    height: 90vh;
+    align-items: center;
+  }
+
+  /* CONTAINER SERVICOS */
+
+  .servicos {
     height: fit-content;
-  }
-
-  .fotos .lista-fotos {
-    gap: 10px;
-    margin-top: -30px;
-  }
-
-  .lista-fotos .foto-sobrancelha {
-    border-radius: 10px;
-    margin-bottom: 25px;
-    width: 30vh;
-  }
-
-  .servicos .lista-servicos {
-    list-style-type: none;
   }
 
   .servicos .p-servicos {
-    margin: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
   }
 
-  .lista-servicos li {
-    height: 50%;
-    width: 80%;
-    margin: auto;
+  .lista-servicos {
+    margin: 0;
   }
 
-  .lista-servicos .texto-design,
-  .texto-henna {
-    margin: -28px;
+  .lista-servicos .sobrancelha-pinca {
+    width: 80vw;
+    box-shadow: none;
+    height: 30vh;
   }
 
-  .contato {
+  .lista-servicos .sobrancelha-henna {
+    width: 80vw;
+    box-shadow: none;
+    height: 30vh;
+  }
+
+  .lista-servicos .serv1,
+  .serv2 {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    border: none;
   }
 
-  .contato .lista-contato {
-    width: 50%;
-    margin: auto;
+  .texto-design,
+  .texto-henna {
+    width: 80vw;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
   }
 
-  .contato .mapa {
-    display: flex;
-    height: 300px;
-    width: 80%;
-    margin: auto;
-    padding: 50px;
+  /* CONTAINER CONTATO */
+  .contato .lista {
+    width: 100vw;
   }
 }
-
-/* ---------- div gradient ------------- */
