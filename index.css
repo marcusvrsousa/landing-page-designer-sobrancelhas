@@ -17,7 +17,7 @@ p {
 }
 
 .nav-principal {
-  height: 100px;
+  height: 10vh;
   margin-bottom: -16px;
 }
 
@@ -32,7 +32,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(212, 150, 227, 0.35);
+  /* background: rgba(212, 150, 227, 0.35); */
+  background: #d496e3bd;
+  height: 10vh;
 }
 
 .itens-navegacao {
@@ -56,7 +58,8 @@ p {
   margin-left: 10px;
   text-decoration: none;
   padding: 3px;
-  border-bottom: 2px solid rgb(90, 34, 180);
+  /* border-bottom: 2px solid rgb(90, 34, 180); */
+  /* border-bottom: 2px solid rgb(159 116 227) amarelo */
 
   /* rgb(90, 34, 180) */
 }
@@ -77,8 +80,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 0px;
-  height: 100vh;
+  margin-top: 15px;
+  height: 90vh;
   background: #f5fffa;
 }
 
@@ -94,9 +97,10 @@ p {
 
 .profissao {
   font-size: 40px;
+  color: #c772db;
   font-style: italic;
-  color: #d496e3;
-  text-decoration: underline;
+  /* color: #d496e3;
+  text-decoration: underline; */
 }
 
 .nome-profissao {
@@ -104,14 +108,13 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(212, 150, 227, 0.4);
-
+  /* background: rgba(212, 150, 227, 0.4); */
   height: 300px;
   width: 600px;
   border-radius: 2%;
 }
 .fran-foto {
-  width: 32%;
+  width: 27%;
   border-radius: 100%;
 }
 
@@ -120,7 +123,7 @@ p {
 .p-portfolio {
   text-align: center;
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 10px;
   margin-right: 20px;
   font-family: "Recursive";
@@ -321,89 +324,6 @@ p {
 /* ---------- mobile ------------- */
 
 /* ---------- button back to top ------------- */
-@media (min-width: 320px) and (max-width: 425px) {
-  .btn-fixed {
-    margin-top: 30vh;
-    right: 10px;
-  }
-
-  .nav-principal {
-    /* display: flex;
-    flex-direction: column; */
-  }
-
-  .containerIndex {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .containerIndex .nav-logo {
-    width: 30%;
-    margin-left: 4px;
-  }
-
-  .containerIndex .itens-navegacao {
-    display: flex;
-  }
-
-  .apresentacao {
-    display: flex;
-    flex-direction: column;
-    margin-top: 22vh;
-    margin-left: 1px;
-  }
-
-  .apresentacao .nome {
-    font-size: 40px;
-  }
-
-  .apresentacao .profissao {
-    font-size: 20px;
-  }
-
-  .apresentacao .fran-foto {
-    height: 40vh;
-    margin-bottom: 50px;
-    width: fit-content;
-    border: 1px solid white;
-  }
-
-  /* -------------- portfolio antes e depois -------------- */
-  .fotos {
-    height: fit-content;
-  }
-
-  .lista-fotos {
-    justify-content: space-around;
-    padding: 20px;
-    margin-top: -20px;
-  }
-
-  .lista-fotos .foto-sobrancelha {
-    border-radius: 30px;
-    width: 20vh;
-  }
-
-  /* -------------- contato e mapa -------------- */
-
-  .contato {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  .lista .lista-contato {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
-    margin: 10px;
-  }
-
-  .mapa {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 374px) {
   .lista-contato {
@@ -422,8 +342,8 @@ p {
 
 @media screen and (min-width: 1440px) and (max-width: 1980px) {
   .nome-profissao {
-    height: 500px;
-    width: 50vw;
+    height: 60vh;
+    width: 60vw;
   }
   /* ---------- portfolio -------------*/
 
@@ -440,15 +360,15 @@ p {
 @media screen and (min-width: 1024px) {
   .nome-profissao {
     height: 50vh;
-    width: 50vw;
+    width: 60vw;
   }
 
   .nome {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   .profissao {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .lista-fotos {
@@ -460,16 +380,16 @@ p {
 /* ---------- TABLET 768 ------------- */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .nav-logo {
-    width: 7%;
+    width: 6%;
   }
 
   .nome-profissao {
-    width: 50vw;
+    width: 55vw;
     height: 40vh;
   }
 
   .nome {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .profissao {
@@ -479,10 +399,11 @@ p {
   /* portfolio */
 
   .fotos {
-    min-height: 110vh;
+    min-height: 100vh;
   }
 
   .lista-fotos {
+    height: 80vh;
   }
 
   .p-portfolio {
@@ -506,216 +427,5 @@ p {
 
   .btn-fixed {
     display: none;
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 768px) {
-  .btn-fixed {
-    display: none;
-  }
-
-  .nav-principal {
-    width: 100vw;
-  }
-
-  .apresentacao {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .containerIndex .nav-logo {
-    width: 10%;
-  }
-
-  /* CONTAINER APRESENTAÇÃO */
-  .nome-profissao {
-    width: 80vw;
-    height: 30vh;
-  }
-
-  .nome-profissao .nome {
-    font-size: 2rem;
-  }
-
-  .nome-profissao .profissao {
-    font-size: 1.4rem;
-  }
-
-  .apresentacao .fran-foto {
-    width: 50vh;
-    margin-bottom: 10vh;
-  }
-
-  /* CONTAINER PORTFOLIO */
-
-  .carousel-inner img {
-    height: 400px;
-  }
-
-  .p-portfolio {
-    font-size: 2rem;
-    padding-bottom: 0;
-  }
-
-  .lista-fotos {
-    margin: 0rem 2rem;
-    padding: 20px;
-  }
-  .contato .lista {
-    width: 100vw;
-  }
-
-  .mapa {
-    width: 40vw;
-  }
-}
-
-/* container servicos */
-
-.servicos .p-servicos {
-  font-size: 2rem;
-}
-
-.lista-servicos {
-  padding: 0;
-}
-
-.texto-design,
-.texto-henna {
-  width: 40vw;
-}
-
-.lista-servicos img {
-  width: 40vw;
-  height: 40vh;
-}
-
-/* CONTAINER CONTATO */
-
-.contato .p-contato {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 375px) and (max-width: 425px) {
-  .btn-fixed {
-    display: none;
-  }
-
-  .nome-profissao {
-    margin-top: 40px;
-    width: 100vw;
-  }
-  .servicos .p-servicos {
-    margin-top: 40px;
-    transform: rotate(0);
-    font-family: "Satisfy";
-    text-decoration: overline;
-  }
-
-  .texto-henna,
-  .texto-design {
-    margin: 0px;
-  }
-
-  .p-contato,
-  .lista-contato {
-    width: 100vw;
-  }
-
-  .mapa {
-    width: 80vw;
-    margin: 1rem 2rem;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .btn-fixed {
-    display: none;
-  }
-
-  .gradiente {
-    height: 100vh;
-  }
-
-  .containerIndex .nav-logo {
-    width: 30vw;
-  }
-  .apresentacao .nome-profissao {
-    width: 100vw;
-    height: 20vh;
-  }
-
-  .apresentacao .nome {
-    font-size: 1.5rem;
-  }
-
-  .apresentacao .fran-foto {
-    margin-bottom: 35vh;
-  }
-
-  /* CONTAINER PORTFOLIO */
-
-  .p-portfolio {
-    font-size: 1.5rem;
-  }
-
-  .carousel-inner img {
-    height: 300px;
-  }
-
-  .fotos {
-    height: 100vh;
-  }
-
-  .lista-fotos {
-    height: 90vh;
-    align-items: center;
-  }
-
-  /* CONTAINER SERVICOS */
-
-  .servicos {
-    height: fit-content;
-  }
-
-  .servicos .p-servicos {
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-
-  .lista-servicos {
-    margin: 0;
-  }
-
-  .lista-servicos .sobrancelha-pinca {
-    width: 80vw;
-    box-shadow: none;
-    height: 30vh;
-  }
-
-  .lista-servicos .sobrancelha-henna {
-    width: 80vw;
-    box-shadow: none;
-    height: 30vh;
-  }
-
-  .lista-servicos .serv1,
-  .serv2 {
-    display: flex;
-    flex-direction: column;
-    border: none;
-  }
-
-  .texto-design,
-  .texto-henna {
-    width: 80vw;
-    text-align: center;
-    line-height: 1.4rem;
-    font-size: 1.1rem;
-  }
-
-  /* CONTAINER CONTATO */
-  .contato .lista {
-    width: 100vw;
   }
 }

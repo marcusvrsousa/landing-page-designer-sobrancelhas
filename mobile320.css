@@ -1,0 +1,164 @@
+@media (min-width: 320px) and (max-width: 425px) {
+  .btn-fixed {
+    display: none;
+    transform: translateX(-250px);
+  }
+
+  .nav-principal {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    background: #d496e3bd;
+  }
+
+  .nav-principal .containerIndex {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+
+  .containerIndex .nav-logo {
+    width: 20%;
+    margin-left: 0;
+  }
+
+  .containerIndex .itens-navegacao {
+    display: flex;
+    margin: 5px;
+  }
+
+  /* --------- APRESENTAÇÃO --------- */
+
+  .apresentacao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0vh;
+    margin-left: 1px;
+  }
+
+  .apresentacao .nome-profissao {
+    height: 40vh;
+    margin-top: 15vh;
+  }
+
+  .apresentacao .nome {
+    font-size: 2rem;
+  }
+
+  .apresentacao .profissao {
+    font-size: 20px;
+  }
+
+  .apresentacao .fran-foto {
+    height: 40vh;
+    margin-bottom: 50px;
+    width: fit-content;
+    border: 1px solid white;
+  }
+
+  /* -------------- portfolio antes e depois -------------- */
+  .p-portfolio {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+
+  .fotos {
+    height: fit-content;
+  }
+
+  .lista-fotos {
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: -20px;
+    height: 90vh;
+    align-items: center;
+  }
+
+  .lista-fotos .foto-sobrancelha {
+    border-radius: 30px;
+    width: 20vh;
+  }
+
+  /* -------------- servicos -------------- */
+
+  .servicos {
+    height: fit-content;
+  }
+
+  .servicos .p-servicos {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .lista-servicos {
+    margin: 0;
+  }
+
+  .lista-servicos .sobrancelha-pinca {
+    width: 80vw;
+    box-shadow: none;
+    height: 30vh;
+  }
+
+  .lista-servicos .sobrancelha-henna {
+    width: 80vw;
+    box-shadow: none;
+    height: 30vh;
+    transform: translateY(20vh);
+  }
+
+  .lista-servicos .serv1,
+  .serv2 {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .texto-design,
+  .texto-henna {
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+  }
+
+  .serv1 .texto-design {
+    width: 90vw;
+  }
+
+  .serv2 .texto-henna {
+    transform: translateY(-30vh);
+    width: 90vw;
+  }
+
+  /* -------------- contato e mapa -------------- */
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .contato .p-contato {
+  }
+  .lista {
+    width: 100vw;
+  }
+
+  .lista .lista-contato {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0px;
+  }
+
+  .mapa {
+    width: 80%;
+    margin: 1rem 2rem;
+  }
+}

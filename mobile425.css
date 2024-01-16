@@ -1,0 +1,87 @@
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .btn-fixed {
+    display: none;
+  }
+
+  .nav-principal {
+    width: 100vw;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerIndex .nav-logo {
+    width: 15%;
+  }
+
+  /* CONTAINER APRESENTAÇÃO */
+  .nome-profissao {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .nome-profissao .nome {
+    font-size: 2rem;
+  }
+
+  .nome-profissao .profissao {
+    font-size: 1.4rem;
+  }
+
+  .apresentacao .fran-foto {
+    width: 50vh;
+    margin-bottom: 10vh;
+  }
+
+  /* CONTAINER PORTFOLIO */
+
+  .carousel-inner img {
+    height: 400px;
+  }
+
+  .p-portfolio {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  .lista-fotos {
+    margin: 1rem 2rem;
+    padding: 20px;
+  }
+  .contato .lista {
+    width: 100vw;
+  }
+
+  .mapa {
+    width: 40vw;
+    margin: 0rem 1rem;
+  }
+}
+
+/* container servicos */
+
+.servicos .p-servicos {
+  font-size: 2rem;
+}
+
+.lista-servicos {
+  padding: 0;
+}
+
+.texto-design,
+.texto-henna {
+  width: 40vw;
+}
+
+.lista-servicos img {
+  width: 40vw;
+  height: 40vh;
+}
+
+/* CONTAINER CONTATO */
+
+.contato .p-contato {
+  font-size: 2rem;
+}
