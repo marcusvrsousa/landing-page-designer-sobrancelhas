@@ -22,8 +22,8 @@ p {
 }
 
 .nav-logo {
-  margin-left: 50px;
-  width: 4%;
+  margin-left: 8vw;
+  width: 4.5vw;
   padding: 5px;
   border-radius: 100px;
 }
@@ -38,7 +38,7 @@ p {
 }
 
 .itens-navegacao {
-  margin: 20px;
+  margin: 5vw;
   font-family: "Recursive", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
