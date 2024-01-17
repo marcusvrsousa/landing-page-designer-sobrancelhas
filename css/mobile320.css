@@ -25,7 +25,7 @@
 
   .containerIndex .itens-navegacao {
     display: flex;
-    margin: 5px;
+    margin: 3vh;
   }
 
   /* --------- APRESENTAÇÃO --------- */
@@ -99,6 +99,7 @@
 
   .lista-servicos {
     margin: 0;
+    height: 100vh;
   }
 
   .lista-servicos .sobrancelha-pinca {
@@ -111,7 +112,7 @@
     width: 80vw;
     box-shadow: none;
     height: 30vh;
-    transform: translateY(20vh);
+    transform: translateY(13vh);
   }
 
   .lista-servicos .serv1,
