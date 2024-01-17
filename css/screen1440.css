@@ -1,0 +1,58 @@
+@media screen and (min-width: 1440px) and (max-width: 1980px) {
+  .itens-navegacao {
+    font-size: 2.6rem;
+  }
+
+  .nav-logo {
+    width: 7vw;
+  }
+
+  .nome-profissao {
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .nome {
+    font-size: 6rem;
+  }
+  .profissao {
+    font-size: 3.4rem;
+  }
+
+  .fran-foto {
+    width: 30vw;
+    margin-right: 100px;
+  }
+  /* ---------- portfolio -------------*/
+
+  .p-portfolio {
+    margin-top: 10px;
+    font-size: 5rem;
+  }
+
+  .lista-fotos {
+    /* margin-top: 10vh; */
+    align-items: center;
+  }
+
+  .carousel-inner img {
+    height: 1000px;
+  }
+
+  .servicos .p-servicos {
+    font-size: 5rem;
+  }
+
+  .texto-design,
+  .texto-henna {
+    font-size: 2rem;
+  }
+
+  .contato {
+    height: 30vh;
+  }
+
+  .contato .p-contato {
+    font-size: 4rem;
+  }
+}

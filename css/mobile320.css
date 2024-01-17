@@ -15,10 +15,11 @@
     display: flex;
     flex-direction: column;
     background: none;
+    height: 20vh;
   }
 
   .containerIndex .nav-logo {
-    width: 20%;
+    width: 12vh;
     margin-left: 0;
   }
 
@@ -39,6 +40,7 @@
   .apresentacao .nome-profissao {
     height: 40vh;
     margin-top: 15vh;
+    width: fit-content;
   }
 
   .apresentacao .nome {

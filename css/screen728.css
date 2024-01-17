@@ -1,0 +1,56 @@
+/* ---------- TABLET 768 ------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-logo {
+    width: 6%;
+  }
+
+  .nome-profissao {
+    width: 55vw;
+    height: 40vh;
+  }
+
+  .nome {
+    font-size: 4rem;
+  }
+
+  .profissao {
+    font-size: 1.6rem;
+  }
+
+  /* portfolio */
+
+  .fotos {
+    min-height: 100vh;
+  }
+
+  .lista-fotos {
+    height: 80vh;
+  }
+
+  .carousel-inner img {
+    height: 400px;
+  }
+
+  .p-portfolio {
+    font-size: 2.4rem;
+    padding: 1;
+    margin: 0;
+  }
+
+  .servicos .p-servicos {
+    font-size: 2.4rem;
+  }
+
+  /* contato e mapa */
+  .mapa {
+    width: 40vw;
+  }
+
+  .p-contato {
+    font-size: 2.2rem;
+  }
+
+  .btn-fixed {
+    display: none;
+  }
+}

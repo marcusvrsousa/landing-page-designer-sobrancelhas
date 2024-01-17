@@ -40,7 +40,7 @@ p {
 .itens-navegacao {
   margin: 20px;
   font-family: "Recursive", sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
@@ -142,6 +142,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-top: 10vh;
 }
 
 .fotos-portfolio {
@@ -207,7 +208,7 @@ p {
   stroke: #d496e3;
   font-style: ;
   font-family: "Recursive";
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: right;
   width: 20%;
 }
@@ -216,7 +217,7 @@ p {
   color: black;
   font-family: "Recursive";
   /* font-style: italic; */
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: left;
   width: 20%;
 }
@@ -325,46 +326,17 @@ p {
 
 /* ---------- button back to top ------------- */
 
-@media screen and (max-width: 374px) {
-  .lista-contato {
-    gap: 0px;
-    margin: 10px;
-  }
-  .numero-wpp {
-    font-size: 15px;
-  }
-  .nome-instagram {
-    font-size: 18px;
-  }
-}
-
 /* ---------- TELA 4K ------------- */
 
-@media screen and (min-width: 1440px) and (max-width: 1980px) {
-  .nome-profissao {
-    height: 60vh;
-    width: 60vw;
-  }
-  /* ---------- portfolio -------------*/
-
-  .p-portfolio {
-    margin-top: 10px;
-  }
-  .lista-fotos {
-    margin-top: 10vh;
-    align-items: center;
-  }
-}
-
 /* ---------- TELA 1024+ ------------- */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .nome-profissao {
     height: 50vh;
     width: 60vw;
   }
 
   .nome {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .profissao {
@@ -372,60 +344,15 @@ p {
   }
 
   .lista-fotos {
-    /* margin-top: 10vh; */
+    margin-top: 10vh;
     align-items: center;
   }
-}
 
-/* ---------- TABLET 768 ------------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-logo {
-    width: 6%;
-  }
-
-  .nome-profissao {
-    width: 55vw;
-    height: 40vh;
-  }
-
-  .nome {
-    font-size: 4rem;
-  }
-
-  .profissao {
-    font-size: 1.6rem;
-  }
-
-  /* portfolio */
-
-  .fotos {
-    min-height: 100vh;
-  }
-
-  .lista-fotos {
-    height: 80vh;
-  }
-
-  .p-portfolio {
-    font-size: 2.4rem;
-    padding: 1;
-    margin: 0;
+  .carousel-inner img {
+    height: 400px;
   }
 
   .servicos .p-servicos {
-    font-size: 2.4rem;
-  }
-
-  /* contato e mapa */
-  .mapa {
-    width: 40vw;
-  }
-
-  .p-contato {
-    font-size: 2.2rem;
-  }
-
-  .btn-fixed {
-    display: none;
+    font-size: 2.6rem;
   }
 }
