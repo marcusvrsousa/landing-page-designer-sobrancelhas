@@ -198,11 +198,6 @@ p {
   padding: 40px;
 }
 
-.sobrancelha-pinca,
-.sobrancelha-henna {
-  height: 300px;
-}
-
 .texto-design {
   color: black;
   stroke: #d496e3;
@@ -320,12 +315,6 @@ p {
 .contato .mapa {
   height: 100%;
 }
-
-/* ---------- mobile ------------- */
-
-/* ---------- button back to top ------------- */
-
-/* ---------- TELA 4K ------------- */
 
 /* ---------- TELA 1024+ ------------- */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
