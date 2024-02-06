@@ -124,14 +124,14 @@ p {
   text-align: center;
   color: black;
   font-size: 3rem;
-  padding: 10px;
+  padding: 20px;
   margin-right: 20px;
   font-family: "Recursive";
   font-size: 50px;
 }
 
 .fotos {
-  min-height: 100vh;
+  height: 100vh;
   /* background-color: #b976ee; */
   background-color: #d496e380;
   /* background-image: linear-gradient(#e977e6, #ffd0ff); */
@@ -142,7 +142,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 
 .fotos-portfolio {
@@ -180,7 +180,7 @@ p {
   justify-content: center;
   font-size: 3rem;
   font-family: "Recursive";
-  margin-top: 2%;
+  padding: 20px;
 }
 
 .lista-servicos img {
@@ -189,13 +189,13 @@ p {
 }
 
 .lista-servicos .serv1,
-.serv2 {
+.serv2__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .sobrancelha-pinca,
@@ -213,13 +213,12 @@ p {
   width: 20%;
 }
 
-.texto-henna {
+.serv2__container .texto-henna {
   color: black;
   font-family: "Recursive";
-  /* font-style: italic; */
   font-size: 1.4rem;
   text-align: left;
-  width: 20%;
+  width: 40%;
 }
 
 .texto-henna > strong,
@@ -344,12 +343,12 @@ p {
   }
 
   .lista-fotos {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     align-items: center;
   }
 
   .carousel-inner img {
-    height: 400px;
+    height: 480px;
   }
 
   .servicos .p-servicos {

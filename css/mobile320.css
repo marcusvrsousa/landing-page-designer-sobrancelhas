@@ -69,14 +69,14 @@
   }
 
   .fotos {
-    height: fit-content;
+    height: 60vh;
   }
 
   .lista-fotos {
-    justify-content: space-around;
-    padding: 20px;
+    /* justify-content: space-around;
+    padding: 20px; */
     margin-top: -20px;
-    height: 90vh;
+    height: 50vh;
     align-items: center;
   }
 
@@ -112,7 +112,7 @@
     width: 80vw;
     box-shadow: none;
     height: 30vh;
-    transform: translateY(13vh);
+    /* transform: translateY(13vh); */
   }
 
   .lista-servicos .serv1,
@@ -123,7 +123,7 @@
   }
 
   .texto-design,
-  .texto-henna {
+  .serv2__container .texto-henna {
     text-align: center;
     line-height: 1.4rem;
     font-size: 1.1rem;
@@ -134,8 +134,18 @@
   }
 
   .serv2 .texto-henna {
-    transform: translateY(-30vh);
+    /* transform: translateY(-30vh); */
     width: 90vw;
+  }
+
+  .lista-servicos .serv2 {
+  }
+
+  .serv2__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 
   /* -------------- contato e mapa -------------- */
@@ -144,6 +154,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    margin-top: 20%;
   }
 
   .contato .p-contato {
